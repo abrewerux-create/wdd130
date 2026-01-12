@@ -42,18 +42,18 @@ img {
 
 section {
     background-color: #ddd;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin: 40px 0;
     border: 1px solid rgb(0 0 0 / 10%);
     font-size: .9rem;
 }
 
 section p {
-    padding: 20px;
+    padding: 20px 0px 0px 20px;
 }
 
 ul {
-    margin: 20px 0 20px 30px;
+    margin: 20px 0 0 30px;
 }
 
 h2 {
