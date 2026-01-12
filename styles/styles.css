@@ -2,21 +2,51 @@ nav {
     background-color: darkblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
-h1{
+
+main {
+    max-width: 800px;
+}
+
+h1 {
     color: darkblue;
 }
-img {
+
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p{
+
+p {
+    padding: 0;
+}
+
+aside {
+    width: 400px;
+    margin: 0px;
+    border: 1px solid rgb(0 0 0 / .1);
     padding: 10px;
+    background-color: lightblue;
+    color: darkblue;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin: 20px 0 0 0;
+    border-top: 1px solid rgb(0 0 0 / .1);
+    text-align: center;
+
 }
