@@ -2,13 +2,15 @@
     /* deep navy */
     --primary-color: #0B2D4D;
     /* evergreen */
-    --secondary-color: #0F6B4E;
+    /* --secondary-color: #0F6B4E; */
     /* sky blue */
-    --accent1-color: #55C0FF;
+    /* --accent1-color: #55C0FF; */
     /* paddle yellow */
     --accent2-color: #FFD23F;
-    --body-font: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    --heading-font: "Gravitas One", serif;
+    /* white */
+    --accent3-color: #FFFFFF;
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Trebuchet MS", Trebuchet, Arial, sans-serif;
 }
 
 * {
@@ -58,7 +60,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -68,11 +70,11 @@ h1 {
     background-color: var(--accent2-color);
 }
 
-article {
+.hero article {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    background-color: #FFFFFF;
+    background-color: var(--accent3-color);
     margin: 0;
     padding: 40px 0 0 40px;
     width: 100%;
