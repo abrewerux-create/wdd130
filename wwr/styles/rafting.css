@@ -89,3 +89,16 @@ article {
     height: auto;
     fill: var(--primary-color) !important;
 }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    flex: 1 1 100%;
+
+}

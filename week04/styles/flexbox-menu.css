@@ -9,16 +9,12 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
+    align-items: left;
 }
 
 nav a {
-    display: block;
     color: #fff;
     text-align: center;
     padding: 1rem;
