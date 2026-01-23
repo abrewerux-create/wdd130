@@ -46,13 +46,6 @@ footer {
     align-content: center;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px 0;
-}
-
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -126,10 +119,12 @@ article {
 nav ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap: 8px 0;
 }
 
 header nav a {
@@ -219,6 +214,7 @@ footer nav {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 16px;
+    color: rgb(var(--accent2-color));
 
 }
 
