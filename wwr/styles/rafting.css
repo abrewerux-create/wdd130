@@ -192,6 +192,7 @@ footer {
     align-items: center;
     padding: 24px 0;
     background-color: rgb(var(--secondary-color));
+    color: rgb(var(--accent2-color));
 }
 
 footer p {
