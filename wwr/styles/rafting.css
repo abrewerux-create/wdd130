@@ -210,15 +210,11 @@ footer nav {
     max-width: 1440px;
     background-color: rgb(var(--primary-color));
     padding: 40px;
-}
-
-div.rafting-imgs {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
     gap: 16px;
+
 }
 
 figure img {
@@ -228,12 +224,13 @@ figure img {
 }
 
 .adventure h2 {
+    width: 100%;
     text-align: center;
     margin-bottom: 40px;
     color: rgb(var(--accent2-color));
 }
 
-figure {
+.adventure figure {
     color: rgb(var(--accent2-color));
     text-align: center;
 }
