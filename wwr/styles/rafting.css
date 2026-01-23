@@ -83,15 +83,6 @@ article {
     position: absolute;
     left: 5%;
     width: 90%;
-}
-
-.hero article {
-    position: absolute;
-    left: 5%;
-    width: 90%;
-}
-
-.hero h1 {
     top: 55%;
     transform: translateY(-100%);
     padding: 12px;
@@ -101,6 +92,9 @@ article {
 }
 
 .hero article {
+    position: absolute;
+    left: 5%;
+    width: 90%;
     top: 55%;
     padding: 16px;
     margin: 0;
