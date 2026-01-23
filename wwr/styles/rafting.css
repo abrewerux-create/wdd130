@@ -73,35 +73,41 @@ article {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: .25fr 3fr 3fr 3fr .25fr;
-    grid-template-rows: 3.5fr .5fr 1fr .5fr;
-    max-height: 1000px;
+    position: relative;
+    overflow: visible;
+    min-height: 700px;
 }
 
 .hero img {
-    grid-column: 1/6;
-    grid-row: 1/5;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+    left: 5%;
+    width: 90%;
 }
 
 .hero h1 {
-    grid-column: 2/5;
-    grid-row: 2;
-    text-align: center;
+    top: 55%;
+    transform: translateY(-100%);
+    padding: 12px;
+    margin: 0;
     background-color: rgb(var(--accent-color) / 0.85);
-    align-content: center;
-    width: 100%;
+    text-align: center;
 }
 
 .hero article {
-    grid-column: 2/5;
-    grid-row: 3/4;
+    top: 55%;
+    padding: 16px;
+    margin: 0;
     background-color: rgb(var(--accent2-color) / 0.85);
-    width: 100%;
+
 }
 
 .hero article img {
