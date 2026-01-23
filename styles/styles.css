@@ -1,11 +1,11 @@
 :root {
     --primary-border: 1 px solid black;
     --secondary-border: 1px solid rgb(0 0 0 / .1);
-    --primary-color: darkblue;
-    --secondary-color: lightblue;
-    --primary-text-color: darkblue;
+    --primary-color: #1E2F6F;
+    --secondary-color: #E3E9FA;
+    --primary-text-color: #1C1C1C;
     --secondary-text-color: white;
-    --paragraph-text-color: black;
+    --paragraph-text-color: #1C1C1C;
     --box-shadow: 0 0 30px gray;
 }
 
