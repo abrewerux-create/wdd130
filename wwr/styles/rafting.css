@@ -307,7 +307,7 @@ footer .socialmedia img {
 form {
     background-color: rgb(var(--secondary-color));
     padding: 0 4rem;
-    color: rgb(var(--accent2-color)));
+    color: rgb(var(--accent2-color));
 }
 
 form h2 {
