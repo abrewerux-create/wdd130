@@ -324,7 +324,7 @@ label[for="name"],
 label[for="email"],
 label[for="message"],
 .mapform legend {
-    font-size: .7rem;
+    font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(var(--accent2-color));
