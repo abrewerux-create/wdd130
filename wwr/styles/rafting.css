@@ -405,6 +405,6 @@ input[type="checkbox"] {
 }
 
 ::placeholder {
-    color: rgb(var(--accent3-color) / .65);
+    color: rgb(var(--accent3-color) / .85);
     font-style: italic;
 }
