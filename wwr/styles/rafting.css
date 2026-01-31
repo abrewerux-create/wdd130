@@ -301,7 +301,7 @@ footer .socialmedia img {
     margin: .25rem 0 1rem 0;
     border-radius: 4px;
     border: 2px rgb(var(--secondary-color)) solid;
-    background-color: rgb(var(--accent2-color) / 0.5);
+    background-color: rgb(var(--accent2-color) / 0.85);
 }
 
 form {
