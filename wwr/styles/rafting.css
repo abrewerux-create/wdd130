@@ -22,6 +22,8 @@
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header,
@@ -55,7 +57,8 @@ h2 {
 
 p,
 section,
-article {
+article,
+address {
     padding: 8px;
     margin: 0px;
 
@@ -99,7 +102,6 @@ article {
     padding: 16px;
     margin: 0;
     background-color: rgb(var(--accent2-color) / 0.85);
-
 }
 
 .hero article img {
@@ -238,4 +240,144 @@ figure img {
 
 footer .socialmedia img {
     filter: brightness(0) invert(1) contrast(1.2);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    margin-bottom: 2rem;
+}
+
+.info h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: rgb(var(--accent-color));
+    align-content: center;
+    text-align: center;
+}
+
+.info address {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 140%;
+}
+
+.mapform {
+    max-width: 1440px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.mapform .map {
+    display: flex;
+}
+
+.mapform .map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 450px;
+}
+
+.mapform .map,
+.mapform form {
+    min-width: 300px;
+    flex: 1 1 calc(50% - 2rem);
+}
+
+.mapform input,
+.mapform textarea {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem;
+    width: 100%;
+    margin: .25rem 0 1rem 0;
+}
+
+form h2 {
+    font-size: x-large;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(var(--secondary-color));
+    color: rgb(var(--accent2-color));
+
+}
+
+label[for="name"],
+label[for="email"],
+label[for="message"],
+.mapform legend {
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.centerface {
+    object-position: center 5%;
+}
+
+fieldset div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: .5rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: .25rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: .5rem 0;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+button {
+    display: block;
+    font-size: 1rem;
+    padding: 8px 24px;
+    margin: 24px auto 0;
+    background-color: rgb(var(--secondary-color));
+    color: rgb(var(--accent2-color));
+    border: 1px rgb(var(--secondary-color)) solid;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(var(--accent2-color));
+    color: rgb(var(--secondary-color));
+    border: 1px rgb(var(--secondary-color)) solid;
+    border-radius: 4px;
 }
