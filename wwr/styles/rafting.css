@@ -85,6 +85,59 @@ address {
     max-height: 800px;
 }
 
+a.btn {
+    text-decoration: none;
+}
+
+div.trips {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 8rem 2rem;
+    gap: 4rem;
+    justify-content:center;
+    
+}
+
+.trips img {
+    min-width: 350px;
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+
+}
+
+div.tripstext {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    min-width: 350px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tripstext h2 {
+    grid-row: 2/3;
+    text-align: center;
+    align-items: center;
+}
+
+.tripstext p {
+    grid-row: 3/4;
+    min-width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.tripstext a {
+    grid-row: 4/5;
+    margin: 0;
+    align-items: center;
+}
+
+
 .callout {
     position: absolute;
     top: 0%;
@@ -106,7 +159,7 @@ address {
     padding: 12px;
     margin: 0;
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(var(--accent2-color));
 }
 
@@ -425,7 +478,7 @@ fieldset {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: .5rem 0;
+    margin: 0rem 0 ;
 }
 
 input[type="checkbox"] {
@@ -450,6 +503,7 @@ button {
     color: rgb(var(--primary-color));
     border: 1px rgb(var(--primary-color)) solid;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 button:hover {
@@ -458,6 +512,7 @@ button:hover {
     border: 1px rgb(var(--primary-color)) solid;
     border-radius: 4px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 
@@ -481,6 +536,7 @@ input[type="checkbox"] {
 
 .newsletter {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     padding: 1rem 2rem;
 }
@@ -494,18 +550,22 @@ form.newsletter h2 {
 
 form.newsletter {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    min-width: 200px;
     gap: 1.5rem;
     background-color: rgb(var(--accent-color));
     padding: 2rem 4rem;
-    margin-bottom: 0;
+    margin-bottom: 4rem;
 }
 
 form.newsletter > div {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     align-items: center;
     gap: 0.5rem;
+    min-width: 200px;
 }
 
 form.newsletter button {
@@ -543,5 +603,118 @@ label[for="subemail"] {
   border-radius: 6px;
   border: 1px solid rgb(var(--primary-color));
   flex: 1;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 2rem 4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro-copy {
+    display: grid;
+    gap: 1rem;
+}
+
+.intro-copy h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.intro-copy p {
+    margin: 0;
+    text-align: center;
+}
+
+.intro-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.intro-images .image1 {
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-images .image2 {
+    width: min(320px, 100%);
+    justify-self: start;
+}
+
+.intro-copy a.btn {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.table caption {
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+table {
+    line-height: 2;
+    border: 1pt solid rgb(var(--primary-color) /.15);
+    border-collapse: collapse; 
+    margin-bottom: 2rem;
+}
+
+thead {
+    font-weight: 700;
+    background-color: rgb(var(--accent-color));
+    font-size: large;
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    border: 1pt solid rgb(var(--primary-color) /.15);
+}
+
+td {
+    border: 1pt solid rgb(var(--primary-color) /.15);
+    margin: 0;
+    padding: 8px;
+}
+
+table td:nth-child(3),
+table td:nth-child(4) {
+    text-align: center;
+}
+
+tfoot {
+    background-color: rgb(var(--accent-color) / 0.35);
+    font-style: italic;
 }
 
