@@ -718,3 +718,18 @@ tfoot {
     font-style: italic;
 }
 
+a.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgb(var(--accent2-color));
+  color: rgb(var(--primary-color));
+  border: 1px solid rgb(var(--primary-color));
+}
+
+a.btn:hover {
+  background-color: rgb(var(--accent-color));
+}
+
