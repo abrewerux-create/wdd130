@@ -163,7 +163,7 @@ div.tripstext {
     color: rgb(var(--accent2-color));
 }
 
-.callout article {
+.callout p {
     position: absolute;
     left: 5%;
     width: 90%;
